@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- shaed style  -->
+    <style>
+        .popins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gormando {
+            font-family: 'EB Garamond', serif;
+        }
+
+        .kathali {
+            background: #B68C5A;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="lg:container w-4/5 m-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu popins menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li>
+                            <a>Service</a>
+                            <ul class="p-2">
+                                <li><a>Gym</a></li>
+                                <li><a>Outfit</a></li>
+                            </ul>
+                        </li>
+                        <li><a>case</a></li>
+                        <li><a>blog</a></li>
+                        <li><a>Contuc us</a></li>
+                    </ul>
+                </div>
+                <a class="btn gormando bg-black"><img class="w-1/2" src="./images/logo.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li tabindex="0">
+                        <details>
+                            <summary>Service</summary>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li><a>case <i class="fa-solid fa-greater-than"></i></a></li>
+                    <li><a>blog</a></li>
+                    <li><a>About us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn gormando kathali">Free Consultation</a>
+            </div>
+        </div>
+        <div class="hero min-h-screen mt-10" style="background-image: url('./images/banner.png');">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold gormando">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5 popins">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour.</p>
+                    <input type="text" placeholder="Type here" class="input input-ghost w-full max-w-xs" />
+                    <button class="btn kathali">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section class="mt-16 lg:container w-4/5 m-auto">
+            <div class="text-center">
+                <h2 class="text-3xl gormando">What Our Client Say</h2>
+                <p class="popins">There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="carousel mt-8 h-96 w-full">
+                <!-- sliide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url('./images/banner.png');">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md">
+                                <div class="lg:left-52 left-20 relative">
+                                    <img class="w-10 h-10 border-2 border-white rounded-full" src="./images/sojib.jpg" alt="">
+                                </div>
+                                <h1 class=" text-xl font-bold gormando">Awlad Hossain</h1>
+                                <p class="mb-5">UIX Designer</p>
+                                <p class="mb-5 popins">There are many variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered alteration in some form, by injected humour.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url('./images/slider-1.jpg');">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md">
+                                <div class="lg:left-52 left-20 relative">
+                                    <img class="w-10 h-10 border-2 border-white rounded-full" src="./images/sojib.jpg" alt="">
+                                </div>
+                                <h1 class=" text-xl font-bold gormando">Awlad Hossain</h1>
+                                <p class="mb-5">UIX Designer</p>
+                                <p class="mb-5 popins">There are many variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered alteration in some form, by injected humour.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url('./images/slider-2.jpg');">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md">
+                                <div class="lg:left-52 left-20 relative">
+                                    <img class="w-10 h-10 border-2 border-white rounded-full" src="./images/sojib.jpg" alt="">
+                                </div>
+                                <h1 class=" text-xl font-bold gormando">Awlad Hossain</h1>
+                                <p class="mb-5">UIX Designer</p>
+                                <p class="mb-5 popins">There are many variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered alteration in some form, by injected humour.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero" style="background-image: url('./images/slider-3.jpg');">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md">
+                                <div class="lg:left-52 left-20 relative">
+                                    <img class="w-10 h-10 border-2 border-white rounded-full" src="./images/sojib.jpg" alt="">
+                                </div>
+                                <h1 class=" text-xl font-bold gormando">Awlad Hossain</h1>
+                                <p class="mb-5">UIX Designer</p>
+                                <p class="mb-5 popins">There are many variations of passages of Lorem Ipsum available, but the
+                                    majority have suffered alteration in some form, by injected humour.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
